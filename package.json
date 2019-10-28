@@ -1,7 +1,7 @@
 {
   "name": "ddd-ecommerce-ts",
   "version": "1.0.0",
-  "main": "build/web/server.js",
+  "main": "build/web/http/server.js",
   "license": "MIT",
   "author": {
     "name": "Albert Don Celis",
@@ -10,8 +10,8 @@
   "scripts": {
     "clean": "rimraf build/*",
     "build": "tsc",
-    "start:dev": "ts-node -r dotenv/config web/server.ts",
-    "start:prod": "yarn clean && yarn build && node -r dotenv/config build/web/server.js"
+    "start:dev": "ts-node -r dotenv/config web/http/server.ts",
+    "start:prod": "yarn clean && yarn build && node -r dotenv/config build/web/http/server.js"
   },
   "devDependencies": {
     "@types/dotenv": "^6.1.1",
